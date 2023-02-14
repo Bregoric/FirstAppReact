@@ -9,7 +9,12 @@ const List = () => {
         { id: 3, title: 'Games', icon: 'gamepad' }
     ]);
 
+    const [value, setValue] = useState('');
 
+    const handleSubmit = e => {
+        e.preventDefault();
+        setColumns([...columns, { id: ??, title: ?? }]);
+    };
 
 
     return (
@@ -22,7 +27,7 @@ const List = () => {
           {columns.map(column => <Column key={column.id} title={column.title} icon={column.icon} />)}
           </section>
           <form onSubmit={handleSubmit}>
-    <input type="text" />
+    <input type="text"  value={value} onChange={e => setValue(e.target.value)}/>
     <button>Add column</button>
 </form>
       </div>
