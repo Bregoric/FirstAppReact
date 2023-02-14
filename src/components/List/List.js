@@ -1,6 +1,7 @@
 import styles from './List.module.scss';
 import Column from '../Column/Column';
 import { useEffect, useState } from 'react';
+import shortid from 'shortid';
 
 const List = () => {
     const [columns, setColumns] = useState([
@@ -13,7 +14,7 @@ const List = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        setColumns([...columns, { id: ??, title: ?? }]);
+        setColumns([...columns, { id: shortid(), title: value }]);
     };
 
 
