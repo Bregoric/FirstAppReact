@@ -15,6 +15,7 @@ const List = () => {
     const handleSubmit = e => {
         e.preventDefault();
         setColumns([...columns, { id: shortid(), title: value }]);
+        setValue('');
     };
 
 
