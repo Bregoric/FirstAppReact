@@ -8,13 +8,7 @@ const List = () => {
         { id: 2, title: 'Movies', icon: 'film' },
         { id: 3, title: 'Games', icon: 'gamepad' }
     ]);
-    useEffect(() => {
 
-        setTimeout(() => {
-              setColumns([...columns, { id: 4, title: 'Test column'}]);
-        }, 2000);
-
-  }, []);
 
 
 
@@ -27,6 +21,10 @@ const List = () => {
           <section className={styles.columns}>
           {columns.map(column => <Column key={column.id} title={column.title} icon={column.icon} />)}
           </section>
+          <form onSubmit={handleSubmit}>
+    <input type="text" />
+    <button>Add column</button>
+</form>
       </div>
     );
   };
