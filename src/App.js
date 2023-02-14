@@ -1,3 +1,6 @@
+import Hero from './components/Hero/Hero'
+import SearchForm from './components/SearchForm/SearchForm'
+
 const App = () => {
   return (
     <div>
