@@ -13,13 +13,12 @@ const ColumnForm = props => {
         setIcon('');
     };
 
-    return ( <form className={styles.columnForm} onSubmit = { handleSubmit } >
-    Title:
-      <div className={styles.padding}><TextInput value={title} onChange={(e) => setTitle(e.target.value)} /></div>
-      Icon: 
-      <div className={styles.padding}><TextInput value={icon} onChange={(e) => setIcon(e.target.value)} /></div>
-      <div className={styles.padding}><Button>Add column</Button></div>
-        </form >
+    return ( <form className={styles.columnForm} onSubmit={handleSubmit}>
+        Title:
+        <div className={styles.padding}><TextInput value={title} onChange={(e) => setTitle(e.target.value)} /></div>
+        Icon: <div className={styles.padding}><TextInput value={icon} onChange={(e) => setIcon(e.target.value)} /></div>
+        <div className={styles.padding}><Button>Add column</Button></div>
+      </form>
     );
 };
 
