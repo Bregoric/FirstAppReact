@@ -6,8 +6,9 @@ import TextInput from "../TextInput/TextInput";
 const CardForm = (props) => {
   const [title, setTitle] = useState("");
   const handleSubmit = (e) => {
+    console.log('Adding new card', title, 'Column ID' , props.columnId);
     e.preventDefault();
-    props.addCard({ title: title }, props.columnId);
+    props.action({ title: title }, props.columnId);
     setTitle("");
   };
   return (

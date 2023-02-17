@@ -65,6 +65,7 @@ const addCard = (newCard, columnId) => {
            title={column.title}
            icon={column.icon} 
            cards={column.cards}
+           id = {column.id}
            addCard={addCard} />)}
           </section>
           <ColumnForm action={addColumn} />

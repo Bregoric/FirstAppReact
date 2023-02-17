@@ -2,6 +2,7 @@ import styles from './Column.module.scss'
 import Card from "../Card/Card";
 import CardForm from '../CardForm/CardForm';
 const Column = props => {
+console.log('Column-prop' ,props);
     return (
         <article className={styles.column}>
             <span className={styles.icon + ' fa fa-' + props.icon} />
@@ -11,7 +12,7 @@ const Column = props => {
           <Card key={card.id} title={card.title} />
         ))}
       </ul>
-      <CardForm columnId={props.id} action={props.action({ title: title }, props.columnId )} />
+      <CardForm columnId={props.id} action = {props.addCard}  />
         </article>
     );
 };
