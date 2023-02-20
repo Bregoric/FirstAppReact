@@ -8,7 +8,11 @@ const reducer = (state, action) => {
                 ...state,
                 columns: [...state.columns, {...action.payload, id: shortid() }],
             };
-
+        case "ADD_CARD":
+            return {
+                ...state,
+                cards: [...state.cards, {...action.payload, id: shortid() }],
+            };
         default:
 
 
