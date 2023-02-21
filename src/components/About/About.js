@@ -2,16 +2,16 @@ import Container from "../Container/Container";
 import NavBar from "../NavBar/NavBar";
 import PageTitle from "../PageTitle/PageTitle";
 
-const Favourite = () => {
+const About = () => {
   return (
     <div>
       <NavBar />
       <Container>
-        <PageTitle>Favourite</PageTitle>
+        <PageTitle>About</PageTitle>
         <p>Lorem ipsum</p>
       </Container>
     </div>
   );
 };
 
-export default Favourite;
+export default About;

@@ -21,7 +21,6 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-        
       </Container>
     </nav>
   );
